@@ -55,14 +55,14 @@ chmod +x batcurl.py
 
   Ejemplo:
   ```bash
-  ./batcurl.py -u "https://api.ejemplo.com/datos" -g "usuario=1234" -g "ciudad=Buenos Aires"
+  ./batcurl.py -u "https://api.ejemplo.com/datos" -g usuario=1234 ciudad=Buenos Aires
   ```
 
 - `-p, --post`: **(Opcional)** Define los parámetros `POST` como pares clave=valor. También pueden pasarse múltiples parámetros.
 
   Ejemplo:
   ```bash
-  ./batcurl.py -u "https://api.ejemplo.com/enviar" -p "nombre=Juan" -p "edad=30"
+  ./batcurl.py -u "https://api.ejemplo.com/enviar" -p nombre=Juan edad=30
   ```
 
 - `-r, --respuesta`: **(Opcional)** Si se especifica, solo se mostrará la respuesta de la solicitud HTTP (sin detalles adicionales como el estado o el comando ejecutado).
@@ -88,7 +88,7 @@ chmod +x batcurl.py
 
 2. **Realizar una solicitud `POST` con parámetros**:
    ```bash
-   ./batcurl.py -u "https://api.ejemplo.com/enviar" -p "nombre=Juan" -p "edad=30"
+   ./batcurl.py -u "https://api.ejemplo.com/enviar" -p "nombre=Juan edad=30"
    ```
 
 3. **Usar un archivo JSON para configurar la solicitud**:
